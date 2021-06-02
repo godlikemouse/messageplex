@@ -1,0 +1,35 @@
+[
+	{
+            "name": "GMail",
+            "url": "https://mail.google.com",
+            "icon": "https://mail.google.com/favicon.ico",
+			"notification": "\\(\\d\\)"
+        },
+        {
+            "name": "Slack",
+            "url": "https://datto.slack.com",
+            "icon": "https://datto.slack.com/favicon.ico",
+			"notification": "new item"
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://linkedin.com",
+            "icon": "https://static-exp1.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca",
+			"notification": "\\(\\d\\)"
+        },
+        {
+            "name": "Messenger",
+            "url": "https://messenger.com",
+            "icon": "https://static.xx.fbcdn.net/rsrc.php/ym/r/YQbyhl59TWY.ico"
+        },
+		{
+			"name": "Discord",
+			"url": "https://discord.com/channels/@me",
+			"icon": "https://i.redd.it/ecwpq6ufhby61.png"
+		},
+		{
+            "name": "Android Messages",
+            "url": "https://messages.google.com/web/conversations?redirected=true",
+            "icon": "https://ssl.gstatic.com/images/branding/product/1x/messages_96dp.png"
+        }
+]

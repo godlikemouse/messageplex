@@ -1,0 +1,13 @@
+.application-webview {
+    margin-left: 80px;
+    height: 100vh;
+    width: calc(100% - 80px);
+    opacity: 1;
+    position: absolute;
+    z-index: 100;
+}
+
+.hidden {
+    opacity: 0;
+    z-index: -1;
+}
