@@ -1,4 +1,6 @@
-# Getting Started with MessagePlex
+# MessagePlex
+
+MessagePlex is a multi-service messaging application allowing you to bring in any web applications into a single application interface. Notification settings can be customized and enabled or disabled for any services.
 
 # Installation
 
