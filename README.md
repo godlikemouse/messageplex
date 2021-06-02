@@ -144,7 +144,7 @@ Feel free add feature requests or report issues: [Features/Issues](https://githu
 ## Community
 
 Follow [@Collaboradev on Twitter](https://twitter.com/collaboradev).\
-Follow the [Collaboradev Blog](https://collaboradev).
+Follow the [Collaboradev Blog](https://collaboradev.com).
 
 ## License
 
