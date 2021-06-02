@@ -139,12 +139,12 @@ Runs the debtap converter for building an arch based installer from the Debian i
 
 ## Features/Issues
 
-Feel free add feature requests or report issues: Features/Issues.
+Feel free add feature requests or report issues: [Features/Issues](https://github.com/godlikemouse/messageplex/issues).
 
 ## Community
 
-Follow @Collaboradev on Twitter.
-Follow the Collaboradev Blog.
+Follow [@Collaboradev on Twitter](https://twitter.com/collaboradev).\
+Follow the [Collaboradev Blog](https://collaboradev).
 
 ## License
 
