@@ -31,7 +31,7 @@ Modify the `dist/messageplex-{distro}-{arch}/resources/services.json` file to ad
             "name": "LinkedIn",
             "url": "https://linkedin.com",
             "icon": "https://static-exp1.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca",
-			"notification": "\\(\\d\\)"
+            "notification": "\\(\\d\\)"
         }
     ]
 
