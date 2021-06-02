@@ -6,9 +6,9 @@ MessagePlex is a multi-service messaging application allowing you to bring in an
 
 Clone or download the git repository.
 
-    cd messageplex
-    npm i
-    npm build
+    $ cd messageplex
+    $ npm install
+    $ npm build
 
 ## Configuration
 
@@ -39,7 +39,7 @@ Modify the `dist/messageplex-{distro}-{arch}/resources/services.json` file to ad
 
 Run MessagePlex from the dist directory `dist/messageplex-{distro}-{arch}/`.
 
-    ./messageplex
+    $ ./messageplex
 
 ## Options
 
