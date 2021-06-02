@@ -12,7 +12,7 @@ Clone or download the git repository.
 
 ## Configuration
 
-Modify the `dist/messageplex-{distro}-{arch}/resources/services.json` file to add/remove/modify services.
+Modify the `extraResources/services.json` for a source run or `dist/messageplex-{distro}-{arch}/resources/services.json` for a build run to add/remove/modify services.
 
     [
 	   {
