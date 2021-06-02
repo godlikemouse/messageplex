@@ -32,12 +32,13 @@ function createWindow(icon) {
         }
     });
 
-    const servicesFile = path.join(path.dirname(__dirname), "extraResources", "services.json");
+    const resourcesPath = __dirname.indexOf("app.asar") > 0 ?
+        path.join("..", "..", "resources") :
+        "extraResources";
+    const servicesFile = path.join(path.dirname(__dirname), resourcesPath, "services.json");
     console.log("Loading services file", servicesFile);
     global.services = fs.readFileSync(servicesFile, 'utf-8');
-
     console.log("Loaded services", global.services);
-    console.log("Directory is", __dirname);
 
     // Open the DevTools.
     if(isDevMode()){
