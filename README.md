@@ -2,7 +2,7 @@
 
 MessagePlex is a multi-service messaging application allowing you to bring in any web applications into a single application interface. Notification settings can be customized and enabled or disabled for any services.
 
-# Installation
+## Installation
 
 Clone or download the git repository.
 
@@ -10,7 +10,7 @@ Clone or download the git repository.
     npm i
     npm build
 
-# Configuration
+## Configuration
 
 Modify the `dist/messageplex-{distro}-{arch}/resources/services.json` file to add/remove/modify services.
 
@@ -35,19 +35,19 @@ Modify the `dist/messageplex-{distro}-{arch}/resources/services.json` file to ad
         }
     ]
 
-# Running
+## Running
 
 Run MessagePlex from the dist directory `dist/messageplex-{distro}-{arch}/`.
 
     ./messageplex
 
-# Options
+## Options
 
-## Services Configuration File
+### Services Configuration File
 
 Each entry in the services file determines a service to be used with MessagePlex.  The following describes the configuration options available.
 
-### name
+#### `name`
 
 **Required** Unique string identifying the service.
 
@@ -56,7 +56,7 @@ Each entry in the services file determines a service to be used with MessagePlex
         ...
     }
 
-### url
+#### `url`
 
 **Required** The service url to use.  Essentially, any web application url.
 
@@ -66,7 +66,7 @@ Each entry in the services file determines a service to be used with MessagePlex
         ...
     }
 
-### icon
+#### `icon`
 
 **Required** The icon to use for the service.  This icon is displayed in the left navigation.
 
@@ -75,7 +75,7 @@ Each entry in the services file determines a service to be used with MessagePlex
         "icon": "https://mail.google.com/favicon.ico",
     }
 
-### notification
+#### `notification`
 
 **Optional** The notification regular expression to use.  If this regular expression matches the service document title, then a notification icon is displayed.
 
@@ -87,11 +87,11 @@ Each entry in the services file determines a service to be used with MessagePlex
 The above for example would match when the currently selected GMail folder has any new items.
 
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
-### `npm dev`
+#### `npm dev`
 
 Runs the app in the development mode.\
 This target starts a react development server located at [http://localhost:5000](http://localhost:5000), launches the electron application and opens the developer tools.
@@ -99,19 +99,19 @@ This target starts a react development server located at [http://localhost:5000]
 The application will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+#### `npm test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+#### `npm run build`
 
 Builds the app for production or use `dist` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+#### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
@@ -121,27 +121,27 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-### `npm run app`
+#### `npm run app`
 
 Runs the MessagePlex application directly from the `src` folder.
 
-### `npm run package`
+#### `npm run package`
 
 Runs the package for distribution build target.  Currently, only Debian is supported.
 
-### `npm run arch`
+#### `npm run arch`
 
 Runs the debtap converter for building an arch based installer from the Debian image.  _Note: This requires `debtap` to be available on your system._
 
-# Features/Issues
+## Features/Issues
 
 Feel free add feature requests or report issues: Features/Issues.
 
-# Community
+## Community
 
 Follow @Collaboradev on Twitter.
 Follow the Collaboradev Blog.
 
-# License
+## License
 
 MessagePlex is released under the GNU v3.0 plus license.
