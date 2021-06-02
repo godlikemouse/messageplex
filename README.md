@@ -8,7 +8,7 @@ Clone or download the git repository.
 
     $ cd messageplex
     $ npm install
-    $ npm build
+    $ npm dist
 
 ## Configuration
 
@@ -110,6 +110,10 @@ Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 #### `npm run build`
+
+Creates an optimized build directory for production mode.
+
+#### `npm run dist`
 
 Builds the app for production or use `dist` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.

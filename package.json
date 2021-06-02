@@ -8,12 +8,13 @@
     "homepage": "./",
     "scripts": {
         "start": "react-scripts start",
-        "build": "electron-packager . --asar --prune --extra-resource=./extraResources/services.json --out dist --overwrite",
+        "build": "react-scripts build",
+        "dist": "npm run build && electron-packager . --asar --prune --extra-resource=./extraResources/services.json --out dist --overwrite",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "dev": "BROWSER=none nf start",
         "app": "electron .",
-        "package": "electron-forge make",
+        "package": "npm run build && electron-forge make",
         "arch": "mkdir -p ./out/make/arch/x64 && cd ./out/make/arch/x64 && debtap ../../deb/x64/message-plex_${npm_package_version}_amd64.deb && cd ../../../.."
     },
     "dependencies": {
@@ -32,7 +33,7 @@
     "devDependencies": {
         "@electron-forge/cli": "^6.0.0-beta.54",
         "@electron-forge/maker-deb": "^6.0.0-beta.54",
-        "electron": "^12.0.7",
+        "electron": "^12.0.9",
         "foreman": "^3.0.1"
     },
     "eslintConfig": {
