@@ -52,8 +52,8 @@ Running in direct source mode.
 Each entry in the services file determines a service to be used with MessagePlex.  The following describes the configuration options available.
 
 #### `name`
-
-**Required** Unique string identifying the service.
+Unique string identifying the service.\
+**Required**
 
     {
         "name": "GMail",
@@ -61,8 +61,8 @@ Each entry in the services file determines a service to be used with MessagePlex
     }
 
 #### `url`
-
-**Required** The service url to use.  Essentially, any web application url.
+The service url to use.  Essentially, any web application url.\
+**Required**
 
     {
         ...
@@ -71,17 +71,18 @@ Each entry in the services file determines a service to be used with MessagePlex
     }
 
 #### `icon`
-
-**Required** The icon to use for the service.  This icon is displayed in the left navigation.
+The icon to use for the service.  This icon is displayed in the left navigation.\
+**Required**
 
     {
         ...
         "icon": "https://mail.google.com/favicon.ico",
+        ...
     }
 
 #### `notification`
-
-**Optional** The notification regular expression to use.  If this regular expression matches the service document title, then a notification icon is displayed.
+The notification regular expression to use.  If this regular expression matches the service document title, then a notification icon is displayed.\
+**Optional**
 
     {
         ...
