@@ -7,8 +7,8 @@
         },
         {
             "name": "Slack",
-            "url": "https://datto.slack.com",
-            "icon": "https://datto.slack.com/favicon.ico",
+            "url": "https://slack.com",
+            "icon": "https://slack.com/favicon.ico",
 			"notification": "new item"
         },
         {
@@ -22,12 +22,12 @@
             "url": "https://messenger.com",
             "icon": "https://static.xx.fbcdn.net/rsrc.php/ym/r/YQbyhl59TWY.ico"
         },
-		{
-			"name": "Discord",
-			"url": "https://discord.com/channels/@me",
-			"icon": "https://i.redd.it/ecwpq6ufhby61.png"
-		},
-		{
+	{
+	    "name": "Discord",
+	    "url": "https://discord.com/channels/@me",
+	    "icon": "https://i.redd.it/ecwpq6ufhby61.png"
+	},
+	{
             "name": "Android Messages",
             "url": "https://messages.google.com/web/conversations?redirected=true",
             "icon": "https://ssl.gstatic.com/images/branding/product/1x/messages_96dp.png"
