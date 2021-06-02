@@ -19,13 +19,13 @@ Modify the `dist/messageplex-{distro}-{arch}/resources/services.json` file to ad
             "name": "GMail",
             "url": "https://mail.google.com",
             "icon": "https://mail.google.com/favicon.ico",
-			"notification": "\\(\\d\\)"
+            "notification": "\\(\\d\\)"
         },
         {
             "name": "Slack",
             "url": "https://slack.com",
             "icon": "https://slack.com/favicon.ico",
-			"notification": "new item"
+            "notification": "new item"
         },
         {
             "name": "LinkedIn",
