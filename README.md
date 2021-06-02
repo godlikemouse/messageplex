@@ -41,6 +41,10 @@ Run MessagePlex from the dist directory `dist/messageplex-{distro}-{arch}/`.
 
     $ ./messageplex
 
+Running in direct source mode.
+
+    $ npm run app
+
 ## Options
 
 ### Services Configuration File
