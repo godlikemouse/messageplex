@@ -32,10 +32,12 @@ function createWindow(icon) {
         }
     });
 
-    const resourcesPath = __dirname.indexOf("app.asar") > 0 ?
-        path.join("..", "..", "resources") :
-        "extraResources";
-    const servicesFile = path.join(path.dirname(__dirname), resourcesPath, "services.json");
+    let servicesFile = path.join(path.dirname(__dirname), "extraResources", "services.json");
+    const asarIndex = servicesFile.indexOf("app.asar");
+    servicesFile = asarIndex > 0 ?
+        servicesFile.substring(0, asarIndex) + "services.json" :
+        servicesFile;
+
     console.log("Loading services file", servicesFile);
     global.services = fs.readFileSync(servicesFile, 'utf-8');
     console.log("Loaded services", global.services);

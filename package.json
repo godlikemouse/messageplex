@@ -9,7 +9,7 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "dist": "npm run build && electron-packager . --asar --prune --extra-resource=./extraResources/services.json --ignore=./extraResources/services.json --out dist --overwrite",
+        "dist": "npm run build && electron-packager . --asar --prune --extra-resource=./extraResources/services.json --out dist --overwrite",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
         "dev": "BROWSER=none nf start",
@@ -76,16 +76,5 @@
                 }
             ]
         }
-    },
-    "build": {
-        "extraResources": [
-            {
-                "from": "./src/extraResources/",
-                "to": "extraResources",
-                "filter": [
-                    "**/*"
-                ]
-            }
-        ]
     }
 }
