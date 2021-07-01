@@ -8,7 +8,7 @@ Clone or download the git repository.
 
     $ cd messageplex
     $ npm install
-    $ npm dist
+    $ npm run dist
 
 ## Configuration
 
