@@ -25,7 +25,7 @@ const ApplicationSelector = props => {
                     title={service.name}
                     onClick={() => onClick(service)}
                 >
-                    <img src={service.icon} className="service-icon" />
+                    <img src={service.icon} className="service-icon" alt="service icon" />
                     {
                         notifications[service.name] ?
                             <div className="notification"/> :

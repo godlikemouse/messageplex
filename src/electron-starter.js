@@ -4,14 +4,28 @@ const {
     BrowserWindow,
     Menu,
     Tray,
-    ipcMain
+    ipcMain,
+    session
 } = require('electron');
 const path = require('path');
 const fs = require('fs');
 
 function isDevMode(){
-    return process.env.MODE == "dev";
+    return process.env.MODE === "dev";
 }
+
+ipcMain.on('disable-x-frame', (event, partition) => {
+
+    session.fromPartition(partition).webRequest.onHeadersReceived((details, callback) => {
+
+        delete details.responseHeaders['cross-origin-opener-policy'];
+        delete details.responseHeaders['x-frame-options'];
+        delete details.responseHeaders['x-content-type-options'];
+
+        callback({cancel: false, responseHeaders: details.responseHeaders, statusLine: details.statusLine});
+    });
+
+});
 
 let mainWindow = null;
 function createWindow(icon) {
@@ -24,11 +38,11 @@ function createWindow(icon) {
         skipTaskbar: true,
         autoHideMenuBar: true,
         webPreferences: {
-            //preload: path.join(__dirname, 'preload.js')
             webviewTag: true,
             nodeIntegration: true,
             contextIsolation: false,
-            enableRemoteModule: true
+            enableRemoteModule: true,
+            webSecurity: false
         }
     });
 

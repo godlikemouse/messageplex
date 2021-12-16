@@ -7,7 +7,7 @@
         },
         {
             "name": "Slack",
-            "url": "https://slack.com",
+            "url": "https://www.slack.com",
             "icon": "https://slack.com/favicon.ico",
 			"notification": "new item"
         },
@@ -29,7 +29,7 @@
 	},
 	{
             "name": "Android Messages",
-            "url": "https://messages.google.com/web/conversations?redirected=true",
+            "url": "https://messages.google.com/web/authentication",
             "icon": "https://ssl.gstatic.com/images/branding/product/1x/messages_96dp.png"
         }
 ]
