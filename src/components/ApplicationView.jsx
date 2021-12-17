@@ -87,8 +87,6 @@ const ApplicationView = props => {
                         autosize="on"
                         ref={refs[i]}
                         partition="persist:no-xframe"
-                        allowpopups="true"
-                        nodeintegrationinsubframes="true"
                     ></webview>
                 </div>
             )
